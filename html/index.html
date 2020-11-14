@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register and Login</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css" media="screen">
+        
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!---nav bar---->
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#" ><img src="../image/siitlogo.png" height="50px" width="150px" style="padding: 5px;"></a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#" style="color: black;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#" style="color: black;">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: black;">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>   
+        </div>
+        <!--header image-->
+        <div class="container-fluid">
+            <img src="../image/SIIT_Main_Building (2).jpg" height="300px" width="100%" style="opacity: 0.5;">
+        </div>
+        <!--- Register form-->
+        <div class="container">
+            <h3 style="color: black;padding: 20px;">Register<br><i class="fa fa-window-minimize" style="color: navy;"></i></h3>
+        </div>
+        <div class="container" style="background-color: rgb(236, 236, 236);border: white solid;">
+            <div class="container" style="padding:25px;">
+                <form>
+                    <div class="form-group row">
+                        <input type="text" class="form-control col-md-12" placeholder="Citizen ID or Passport No.">
+                    </div>
+                    <div class="form-group row">
+                        <label for="exampleFormControlSelect1">Title (EN)</label>
+                        <select class="form-control col-md-12" id="exampleFormControlSelect1">
+                            <option>Mr.</option>
+                            <option>Ms.</option>
+                            <option>Mrs.</option>
+                        </select>
+                    </div><br>
+                    <div class="form-group row">
+                        <input type="text" class="form-control col-md-6" placeholder="Name (EN).">
+                        <input type="text" class="form-control col-md-6" placeholder="Surname (EN).">
+
+                    </div>
+                    <div class="form-group row">
+                        <label for="exampleFormControlSelect1">Title (TH)</label>
+                        <select class="form-control col-md-12" id="exampleFormControlSelect1">
+                            <option>1.</option>
+                            <option>2.</option>
+                            <option>3.</option>
+                        </select>
+                    </div><br>
+                    <div class="form-group row">
+                        <input type="text" class="form-control col-md-6" placeholder="Name (TH).">
+                        <input type="text" class="form-control col-md-6" placeholder="Surname (TH).">
+
+                    </div>
+                    <div class="form-group row">
+                        <label for="exampleFormControlSelect1">Nationality</label>
+                        <select class="form-control col-md-12" id="exampleFormControlSelect1">
+                            <option></option>
+                            <option>Burmese</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group row">
+                        <label for="exampleFormControlSelect1">Current Living Country</label>
+                        <select class="form-control col-md-12" id="exampleFormControlSelect1">
+                            <option></option>
+                            <option>Myanmar</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group row">
+                        <label for="exampleFormControlSelect1">School</label>
+                        <select class="form-control col-md-12" id="exampleFormControlSelect1">
+                            <option></option>
+                            <option>Myanmar</option>
+                            <option>Other</option>
+                        </select>
+                    </div><br>
+                    <div class="form-group row">
+                        <input type="email" class="form-control col-md-12" placeholder="Email.">
+                    </div><br>
+                    <div class="form-group row">
+                        <input type="text" class="form-control col-md-6" placeholder="Country Code.">
+                        <input type="text" class="form-control col-md-6" placeholder="Mobile.">
+                    </div><br>
+                    <div class="row">
+                        <div class="col-md-5"></div>
+                        <div class="col-md-2">
+                            <input type="button" class="btn btn-success" value="REGISTER" style="padding: 20px;padding-top: 0%;padding-bottom: 0%;">
+                        </div>
+                         <div class="col-md-5"></div>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+               
+
+    </body>
+</html>
